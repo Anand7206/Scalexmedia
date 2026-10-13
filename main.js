@@ -61,40 +61,40 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   /* ------------------------------------------------------------------------
-     3. FOUNDER VIDEO FILE DETECTOR & PLACEHOLDER MANAGEMENT
+     3. FOUNDER VIDEO FILE DETECTOR & POSTER CARD MANAGEMENT
      ------------------------------------------------------------------------ */
   const founderVideo = document.getElementById('founderVideo');
-  const videoPlaceholder = document.getElementById('videoPlaceholder');
+  const founderPlayBtn = document.getElementById('founderPlayBtn');
+  const videoNotice = document.getElementById('videoNotice');
 
-  if (founderVideo && videoPlaceholder) {
-    // Attempt to verify video file availability on disk
-    fetch('assets/founder-anand.mp4', { method: 'HEAD' })
-      .then(response => {
-        if (response.ok) {
-          // File exists on server, reveal video player on play or load
-          founderVideo.addEventListener('play', () => {
-            videoPlaceholder.style.opacity = '0';
-            setTimeout(() => videoPlaceholder.classList.add('hidden'), 300);
-          });
-        } else {
-          // Keep styled placeholder visible
-          videoPlaceholder.classList.remove('hidden');
-        }
-      })
-      .catch(() => {
-        // Fallback: file missing, display placeholder cleanly
-        videoPlaceholder.classList.remove('hidden');
-      });
-
-    // If user clicks on placeholder panel, attempt video play
-    videoPlaceholder.addEventListener('click', () => {
-      founderVideo.play().then(() => {
-        videoPlaceholder.style.opacity = '0';
-        setTimeout(() => videoPlaceholder.classList.add('hidden'), 300);
-      }).catch(() => {
-        // Video file not ready yet, keep placeholder active
-      });
+  if (founderPlayBtn && founderVideo) {
+    founderPlayBtn.addEventListener('click', () => {
+      fetch('assets/founder-anand.mp4', { method: 'HEAD' })
+        .then(response => {
+          if (response.ok) {
+            founderVideo.classList.remove('hidden');
+            founderVideo.controls = true;
+            founderVideo.play();
+            founderPlayBtn.classList.add('hidden');
+          } else {
+            showNotice();
+          }
+        })
+        .catch(() => {
+          showNotice();
+        });
     });
+
+    function showNotice() {
+      if (videoNotice) {
+        videoNotice.classList.remove('hidden');
+        videoNotice.style.opacity = '1';
+        setTimeout(() => {
+          videoNotice.style.opacity = '0';
+          setTimeout(() => videoNotice.classList.add('hidden'), 400);
+        }, 2500);
+      }
+    }
   }
 
   /* ------------------------------------------------------------------------

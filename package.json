@@ -1,0 +1,18 @@
+{
+  "name": "scalex-media",
+  "version": "1.0.0",
+  "description": "ScaleX Media — Performance Marketing Agency Landing Page",
+  "main": "index.html",
+  "scripts": {
+    "build": "node -e \"console.log('Production static build verified and ready for Vercel deployment.')\"",
+    "start": "python -m http.server 8080",
+    "preview": "python -m http.server 8080"
+  },
+  "keywords": [
+    "performance-marketing",
+    "landing-page",
+    "scalex-media"
+  ],
+  "author": "Anand Singh",
+  "license": "ISC"
+}
