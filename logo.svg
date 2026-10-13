@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 100" width="440" height="100" fill="none">
+  <defs>
+    <!-- Brand Gradient -->
+    <linearGradient id="scalexGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563EB" />
+      <stop offset="100%" stop-color="#4F46E5" />
+    </linearGradient>
+    <linearGradient id="scalexLight" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#2563EB" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Left S-Arrow Icon Mark -->
+  <g transform="translate(18, 10)">
+    <!-- Top Arrow Segment -->
+    <path d="M58 2 L68 18 L55 22 L51 14 L24 28 L14 18 Z" fill="url(#scalexLight)" />
+    <!-- Diagonal Fold -->
+    <path d="M14 18 L51 14 L62 26 L26 44 L14 36 Z" fill="url(#scalexGrad)" />
+    <!-- Middle Band -->
+    <path d="M14 36 L26 44 L60 62 L48 74 L14 56 Z" fill="#1D4ED8" />
+    <!-- Lower Fold & Base Ribbon -->
+    <path d="M14 56 L48 74 L14 78 L2 66 L26 50 Z" fill="url(#scalexGrad)" />
+  </g>
+
+  <!-- Right Typography Wordmark -->
+  <g transform="translate(98, 0)">
+    <!-- SCALEX MEDIA Headline -->
+    <text x="0" y="55" font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="34" letter-spacing="-0.03em" fill="#FFFFFF">SCALE<tspan fill="url(#scalexGrad)">X</tspan>MEDIA</text>
+    
+    <!-- Accent Line -->
+    <line x1="2" y1="67" x2="26" y2="67" stroke="url(#scalexGrad)" stroke-width="2.5" stroke-linecap="round" />
+    <line x1="262" y1="67" x2="286" y2="67" stroke="url(#scalexGrad)" stroke-width="2.5" stroke-linecap="round" />
+
+    <!-- Subtitle -->
+    <text x="34" y="70" font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="9.5" letter-spacing="0.22em" fill="#8A8A94">PERFORMANCE MARKETING AGENCY</text>
+  </g>
+</svg>

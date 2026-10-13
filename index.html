@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ScaleX Media | Performance Marketing Agency — Meta & Google Ads</title>
+  <meta name="description" content="ScaleX Media is a performance marketing agency founded by Anand Singh. We scale D2C, real estate and local service brands on Meta & Google Ads. P&L focused marketing with proven ROAS.">
+  <meta name="keywords" content="Performance Marketing Agency, Meta Ads Agency, Google Ads Agency, D2C Marketing, Real Estate Lead Gen, Lucknow Performance Agency, ScaleX Media, Anand Singh">
+  
+  <!-- Open Graph / Social Media Meta Tags -->
+  <meta property="og:title" content="ScaleX Media | We don't run ads. We run your P&L.">
+  <meta property="og:description" content="Performance marketing for D2C, real estate and local brands. Meta + Google. ₹3.2L+ managed monthly, 11.7x ROAS on record.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/scalexmedia_logo_header@2x.png">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/scalexmedia_logo.png">
+  
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- LocalBusiness Schema (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "ScaleX Media",
+    "image": "assets/scalexmedia_logo_header@2x.png",
+    "founder": {
+      "@type": "Person",
+      "name": "Anand Singh",
+      "image": "assets/anand_singh_founder.jpg"
+    },
+    "telephone": "+918052661507",
+    "email": "anandsingh7206@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "3rd Lane, near Jiamau 1090, Gomtinagar",
+      "addressLocality": "Lucknow",
+      "addressRegion": "Uttar Pradesh",
+      "addressCountry": "IN"
+    },
+    "description": "Performance marketing agency specializing in Meta Ads and Google Ads for D2C, real estate, and local service brands.",
+    "priceRange": "₹₹₹"
+  }
+  </script>
+</head>
+<body>
+
+  <!-- FIXED COSMIC BACKGROUND LAYER (Twinkling Stars & Drifting Orbs) -->
+  <div class="cosmic-background" id="cosmicBackground" aria-hidden="true">
+    <div class="cosmic-orb cosmic-orb-1"></div>
+    <div class="cosmic-orb cosmic-orb-2"></div>
+    <div class="cosmic-stars" id="cosmicStars"></div>
+  </div>
+
+  <!-- STICKY HEADER -->
+  <header class="site-header" id="top">
+    <div class="container header-container">
+      <!-- Logo Links to Homepage ("/") -->
+      <a href="/" class="brand-logo logo" aria-label="ScaleX Media Home">
+        <img 
+          src="assets/scalexmedia_logo_header.png" 
+          srcset="assets/scalexmedia_logo_header.png 1x, assets/scalexmedia_logo_header@2x.png 2x" 
+          alt="ScaleX Media logo" 
+          class="logo-img" 
+          width="440" 
+          height="100" 
+          loading="eager" 
+          decoding="async"
+        >
+      </a>
+
+      <!-- Desktop Nav in Center -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <a href="#results" class="nav-link">Results</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#process" class="nav-link">Process</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Header Action CTA on Right -->
+      <div class="header-action">
+        <a href="#contact" class="btn btn-primary btn-sm">Get Free Audit</a>
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-toggle" id="mobileMenuBtn" aria-label="Toggle Navigation Menu" aria-expanded="false">
+          <svg class="icon-menu" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="4" y1="7" x2="20" y2="7"></line>
+            <line x1="4" y1="12" x2="20" y2="12"></line>
+            <line x1="4" y1="17" x2="20" y2="17"></line>
+          </svg>
+          <svg class="icon-close hidden" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+      <nav class="mobile-nav">
+        <a href="#results" class="mobile-nav-link">Results</a>
+        <a href="#services" class="mobile-nav-link">Services</a>
+        <a href="#process" class="mobile-nav-link">Process</a>
+        <a href="#contact" class="mobile-nav-link">Contact</a>
+        <div class="mobile-drawer-cta">
+          <a href="#contact" class="btn btn-primary btn-full">Get Free Audit</a>
+          <a href="https://wa.me/918052661507?text=Hi%20ScaleX%20Media%2C%20I%20want%20a%20free%20ad%20audit" class="btn btn-ghost btn-full" target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+            </svg>
+            WhatsApp Us
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+      <div class="hero-bg-glow"></div>
+      <div class="container hero-grid">
+        <!-- Hero Text Content -->
+        <div class="hero-content fade-up">
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            Performance Marketing for High-Growth Brands
+          </div>
+          <h1 class="hero-title">
+            We don't run ads.<br>
+            We run your <span class="text-gradient">P&amp;L<span class="accent-x">.</span></span>
+          </h1>
+          <p class="hero-subtitle">
+            Performance marketing for D2C, real estate and local brands. Meta + Google. ₹3.2L+ managed monthly, 11.7x ROAS on record.
+          </p>
+          <div class="hero-ctas">
+            <a href="#contact" class="btn btn-primary">Get a Free Audit</a>
+            <a href="https://wa.me/918052661507?text=Hi%20ScaleX%20Media%2C%20I%20want%20a%20free%20ad%20audit" class="btn btn-ghost" target="_blank" rel="noopener">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+              </svg>
+              WhatsApp Us
+            </a>
+          </div>
+          <div class="trust-strip">
+            <span class="trust-item">50+ campaigns</span>
+            <span class="trust-sep">•</span>
+            <span class="trust-item">Meta &amp; Google certified</span>
+            <span class="trust-sep">•</span>
+            <span class="trust-item">Gomtinagar, Lucknow</span>
+          </div>
+        </div>
+
+        <!-- FOUNDER VIDEO SLOT -->
+        <div class="hero-video-wrapper fade-up">
+          <div class="video-container-frame">
+            <!-- REPLACE: drop founder-anand.mp4 into /assets to activate -->
+            <video id="founderVideo" src="assets/founder-anand.mp4" poster="assets/anand_singh_founder.jpg" controls playsinline preload="none" class="founder-video-element">
+              Your browser does not support HTML5 video.
+            </video>
+            
+            <!-- Dynamic Placeholder (Managed via JS if video fails/missing) -->
+            <div id="videoPlaceholder" class="video-placeholder">
+              <div class="play-icon-glow">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                  <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                </svg>
+              </div>
+              <div class="video-placeholder-info">
+                <p class="founder-name">Anand Singh</p>
+                <span class="founder-title">Founder — ScaleX Media</span>
+                <span class="video-tag">Video coming soon</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESULTS / PROOF SECTION -->
+    <section class="section results-section" id="results">
+      <div class="container">
+        <div class="section-header text-center fade-up">
+          <span class="section-kicker">VERIFIED RESULTS</span>
+          <h2 class="section-title">Real dashboards. Real spend. Real numbers.</h2>
+          <p class="section-subtitle">Screenshots pulled straight from live Meta Ads Manager and Google Ads accounts. Nothing mocked up.</p>
+        </div>
+
+        <!-- Masonry / Bento Grid of 9 Screenshots -->
+        <div class="results-bento-grid">
+          
+          <!-- Card 1 -->
+          <div class="dashboard-card fade-up" data-lightbox="assets/a2ef73edfc0ec261cc90b0dfa4e0a4e8.jpg" data-metric="5.25K conversions" data-platform="Google Ads">
+            <div class="browser-chrome">
+              <div class="chrome-dots">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="chrome-address">ads.google.com/overview</div>
+              <span class="platform-badge platform-google">Google Ads</span>
+            </div>
+            <div class="card-image-wrap">
+              <img src="assets/a2ef73edfc0ec261cc90b0dfa4e0a4e8.jpg" alt="Google Ads dashboard showing 5.25K conversions" class="dashboard-img">
+              <div class="zoom-overlay">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                Click to inspect
+              </div>
+            </div>
+            <div class="card-caption-bar">
+              <div class="headline-metric">5.25K conversions</div>
+              <p class="metric-sub">25.7K clicks · 2.33M impressions · £4.06K spend</p>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="dashboard-card fade-up" data-lightbox="assets/9eb1f932807c96837ea48a936b1c57f2.jpg" data-metric="1.79K leads" data-platform="Google Ads">
+            <div class="browser-chrome">
+              <div class="chrome-dots">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="chrome-address">ads.google.com/leads-campaign</div>
+              <span class="platform-badge platform-google">Google Ads</span>
+            </div>
+            <div class="card-image-wrap">
+              <img src="assets/9eb1f932807c96837ea48a936b1c57f2.jpg" alt="Google Lead Ads result dashboard showing 1.79K leads" class="dashboard-img" loading="lazy">
+              <div class="zoom-overlay">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                Click to inspect
+              </div>
+            </div>
+            <div class="card-caption-bar">
+              <div class="headline-metric">1.79K leads</div>
+              <p class="metric-sub">$14.17 cost/conversion · $25.4K spend · 17.8K clicks</p>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="dashboard-card fade-up" data-lightbox="assets/67401725e78e1318d1fce422dcaedf4e.jpg" data-metric="56.1K conv. value" data-platform="Google Ads">
+            <div class="browser-chrome">
+              <div class="chrome-dots">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="chrome-address">ads.google.com/performance</div>
+              <span class="platform-badge platform-google">Google Ads</span>
+            </div>
+            <div class="card-image-wrap">
+              <img src="assets/67401725e78e1318d1fce422dcaedf4e.jpg" alt="Google Ads showing 56.1K conversion value" class="dashboard-img" loading="lazy">
+              <div class="zoom-overlay">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                Click to inspect
+              </div>
+            </div>
+            <div class="card-caption-bar">
+              <div class="headline-metric">56.1K conversion value</div>
+              <p class="metric-sub">14.5K clicks · 562 conversions · $17.9K spend</p>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="dashboard-card fade-up" data-lightbox="assets/eba7e530d11223cbe183a6b1eb86a483.jpg" data-metric="11.73x ROAS" data-platform="Meta Ads">
+            <div class="browser-chrome">
+              <div class="chrome-dots">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="chrome-address">business.facebook.com/adsmanager</div>
+              <span class="platform-badge platform-meta">Meta Ads</span>
+            </div>
+            <div class="card-image-wrap">
+              <img src="assets/eba7e530d11223cbe183a6b1eb86a483.jpg" alt="Meta Ads Manager showing 11.73x ROAS" class="dashboard-img" loading="lazy">
+              <div class="zoom-overlay">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                Click to inspect
+              </div>
+            </div>
+            <div class="card-caption-bar">
+              <div class="headline-metric">11.73x ROAS</div>
+              <p class="metric-sub">$15,508 revenue from $1,321 spend · 103 purchases</p>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="dashboard-card fade-up" data-lightbox="assets/photo_2026-01-17_12-16-59.jpg" data-metric="4.69x ROAS" data-platform="Meta Ads">
+            <div class="browser-chrome">
+              <div class="chrome-dots">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="chrome-address">adsmanager.facebook.com/reports</div>
+              <span class="platform-badge platform-meta">Meta Ads</span>
+            </div>
+            <div class="card-image-wrap">
+              <img src="assets/photo_2026-01-17_12-16-59.jpg" alt="Meta Ads Manager showing 4.69x ROAS" class="dashboard-img" loading="lazy">
+              <div class="zoom-overlay">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                Click to inspect
+              </div>
+            </div>
+            <div class="card-caption-bar">
+              <div class="headline-metric">4.69x ROAS</div>
+              <p class="metric-sub">158 campaigns · ₹184.75 cost per purchase</p>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="dashboard-card fade-up" data-lightbox="assets/photo_2026-01-17_12-16-58.jpg" data-metric="1,659 purchases" data-platform="Meta Ads">
+            <div class="browser-chrome">
+              <div class="chrome-dots">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="chrome-address">adsmanager.facebook.com/campaigns</div>
+              <span class="platform-badge platform-meta">Meta Ads</span>
+            </div>
+            <div class="card-image-wrap">
+              <img src="assets/photo_2026-01-17_12-16-58.jpg" alt="Meta Ads showing 1,659 purchases" class="dashboard-img" loading="lazy">
+              <div class="zoom-overlay">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                Click to inspect
+              </div>
+            </div>
+            <div class="card-caption-bar">
+              <div class="headline-metric">1,659 purchases</div>
+              <p class="metric-sub">₹3,19,803 spend · ₹192.77 cost per purchase</p>
+            </div>
+          </div>
+
+          <!-- Card 7 -->
+          <div class="dashboard-card fade-up" data-lightbox="assets/photo_2026-01-17_12-16-59__2_.jpg" data-metric="523 purchases" data-platform="Meta Ads">
+            <div class="browser-chrome">
+              <div class="chrome-dots">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="chrome-address">adsmanager.facebook.com/adsets</div>
+              <span class="platform-badge platform-meta">Meta Ads</span>
+            </div>
+            <div class="card-image-wrap">
+              <img src="assets/photo_2026-01-17_12-16-59__2_.jpg" alt="Meta Ads showing 523 purchases scaled" class="dashboard-img" loading="lazy">
+              <div class="zoom-overlay">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                Click to inspect
+              </div>
+            </div>
+            <div class="card-caption-bar">
+              <div class="headline-metric">523 purchases</div>
+              <p class="metric-sub">141 ad sets scaled · ₹200.96 cost per purchase</p>
+            </div>
+          </div>
+
+          <!-- Card 8 -->
+          <div class="dashboard-card fade-up" data-lightbox="assets/photo_2026-03-14_11-27-39.jpg" data-metric="₹18.44 per lead" data-platform="Meta Ads">
+            <div class="browser-chrome">
+              <div class="chrome-dots">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="chrome-address">business.facebook.com/lead-ads</div>
+              <span class="platform-badge platform-meta">Meta Ads</span>
+            </div>
+            <div class="card-image-wrap">
+              <img src="assets/photo_2026-03-14_11-27-39.jpg" alt="Meta Lead Ads showing ₹18.44 per lead" class="dashboard-img" loading="lazy">
+              <div class="zoom-overlay">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                Click to inspect
+              </div>
+            </div>
+            <div class="card-caption-bar">
+              <div class="headline-metric">₹18.44 per lead</div>
+              <p class="metric-sub">44,988 impressions · 37 leads · ₹929 spend</p>
+            </div>
+          </div>
+
+          <!-- Card 9 -->
+          <div class="dashboard-card fade-up" data-lightbox="assets/photo_2026-03-14_11-24-46.jpg" data-metric="174 calls at ₹15.59" data-platform="Meta Ads">
+            <div class="browser-chrome">
+              <div class="chrome-dots">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="chrome-address">business.facebook.com/call-campaigns</div>
+              <span class="platform-badge platform-meta">Meta Ads</span>
+            </div>
+            <div class="card-image-wrap">
+              <img src="assets/photo_2026-03-14_11-24-46.jpg" alt="Meta Call campaign showing 174 calls at ₹15.59" class="dashboard-img" loading="lazy">
+              <div class="zoom-overlay">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                Click to inspect
+              </div>
+            </div>
+            <div class="card-caption-bar">
+              <div class="headline-metric">174 calls at ₹15.59</div>
+              <p class="metric-sub">59,482 impressions · ₹2,711 spend</p>
+            </div>
+          </div>
+
+        </div>
+
+        <p class="results-disclaimer text-center">
+          Results vary by category, budget and offer. These are live client accounts, not projections.
+        </p>
+      </div>
+    </section>
+
+    <!-- COUNTER STRIP -->
+    <section class="counter-strip-section" id="counterSection">
+      <div class="container">
+        <div class="counter-grid">
+          
+          <div class="counter-item fade-up">
+            <div class="counter-number-wrap">
+              <span class="counter-prefix">₹</span>
+              <span class="counter-value" data-target="4.5" data-decimals="1">0</span>
+              <span class="counter-suffix">Cr+</span>
+            </div>
+            <div class="counter-label">Ad spend managed</div>
+          </div>
+
+          <div class="counter-item fade-up">
+            <div class="counter-number-wrap">
+              <span class="counter-value" data-target="11.7" data-decimals="1">0</span>
+              <span class="counter-suffix">x</span>
+            </div>
+            <div class="counter-label">Best recorded ROAS</div>
+          </div>
+
+          <div class="counter-item fade-up">
+            <div class="counter-number-wrap">
+              <span class="counter-value" data-target="50" data-decimals="0">0</span>
+              <span class="counter-suffix">+</span>
+            </div>
+            <div class="counter-label">Campaigns launched</div>
+          </div>
+
+          <div class="counter-item fade-up">
+            <div class="counter-number-wrap">
+              <span class="counter-prefix">₹</span>
+              <span class="counter-value" data-target="15" data-decimals="0">0</span>
+            </div>
+            <div class="counter-label">Lowest cost per call</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES SECTION (Asymmetric Layout) -->
+    <section class="section services-section" id="services">
+      <div class="container">
+        <div class="section-header fade-up">
+          <span class="section-kicker">WHAT WE DO</span>
+          <h2 class="section-title">Built around profitable revenue, not vanity metrics.</h2>
+          <p class="section-subtitle">No multi-page bloated service menus. We run high-intent paid acquisition built to convert.</p>
+        </div>
+
+        <div class="services-asymmetric-grid">
+          <!-- Spotlight Card 1 (Large 60% Width / Spans 2 Rows) -->
+          <div class="service-card service-spotlight fade-up">
+            <div class="service-badge">Core Focus</div>
+            <div class="service-icon-box">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                <polyline points="2 17 12 22 22 17"></polyline>
+                <polyline points="2 12 12 17 22 12"></polyline>
+              </svg>
+            </div>
+            <h3 class="service-title">Meta Ads</h3>
+            <p class="service-desc">
+              Full-funnel campaigns for D2C &amp; e-commerce brands. Dynamic CBO scaling, structured creative testing frameworks, first-party audience targeting, and ruthless retargeting sequences.
+            </p>
+            <ul class="service-features">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#22C55E" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Advantage+ Budget Optimization (CBO) scaling
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#22C55E" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Iterative creative hooks &amp; UGC testing
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#22C55E" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Cost-per-purchase optimization
+              </li>
+            </ul>
+          </div>
+
+          <!-- Secondary Card 2 -->
+          <div class="service-card fade-up">
+            <div class="service-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </div>
+            <h3 class="service-title">Google Ads</h3>
+            <p class="service-desc">
+              High-intent Search, Shopping, and Performance Max campaigns. Built around tight negative keyword lists and genuine cost-per-conversion — never empty click volume.
+            </p>
+          </div>
+
+          <!-- Secondary Card 3 -->
+          <div class="service-card fade-up">
+            <div class="service-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+            </div>
+            <h3 class="service-title">Lead Gen &amp; Calls</h3>
+            <p class="service-desc">
+              High-converting form &amp; click-to-call campaigns for real estate developers, specialized medical clinics, high-ticket coaching, and local service providers.
+            </p>
+          </div>
+
+          <!-- Secondary Card 4 -->
+          <div class="service-card fade-up">
+            <div class="service-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="3" y1="9" x2="21" y2="9"></line>
+                <line x1="9" y1="21" x2="9" y2="9"></line>
+              </svg>
+            </div>
+            <h3 class="service-title">Creative &amp; Landing Pages</h3>
+            <p class="service-desc">
+              Ad creatives and responsive single-page landers engineered specifically to convert cold traffic into paid buyers and qualified WhatsApp leads.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PROCESS SECTION (4 Steps Timeline) -->
+    <section class="section process-section" id="process">
+      <div class="container">
+        <div class="section-header text-center fade-up">
+          <span class="section-kicker">EXECUTION ROADMAP</span>
+          <h2 class="section-title">Four steps to scalable acquisition.</h2>
+          <p class="section-subtitle">No long onboarding bloat. We move from initial audit to active campaign scaling in days.</p>
+        </div>
+
+        <div class="process-timeline">
+          <div class="timeline-line"></div>
+          
+          <div class="process-step fade-up">
+            <div class="step-number">01</div>
+            <h3 class="step-title">Audit</h3>
+            <p class="step-desc">We dissect your current pixel data, funnel conversion rates, historical CAC, and ad creatives to find immediate profit leaks.</p>
+          </div>
+
+          <div class="process-step fade-up">
+            <div class="step-number">02</div>
+            <h3 class="step-title">Strategy &amp; Setup</h3>
+            <p class="step-desc">We build clean campaign structures, install ironclad tracking pixels, write high-converting copy, and design custom ad variations.</p>
+          </div>
+
+          <div class="process-step fade-up">
+            <div class="step-number">03</div>
+            <h3 class="step-title">Launch &amp; Test</h3>
+            <p class="step-desc">We deploy test budgets across targeted audience segments and creative hooks to establish baseline cost per purchase or lead.</p>
+          </div>
+
+          <div class="process-step fade-up">
+            <div class="step-number">04</div>
+            <h3 class="step-title">Scale &amp; Report</h3>
+            <p class="step-desc">We double down on winning ad sets, cut underperforming variables, scale daily spend smoothly, and send plain-English weekly reports.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FOUNDER BLOCK -->
+    <section class="section founder-section">
+      <div class="container">
+        <div class="founder-card-panel fade-up">
+          <div class="founder-grid">
+            
+            <!-- Left: Founder Professional Portrait -->
+            <div class="founder-image-col">
+              <div class="founder-portrait-wrap">
+                <img src="assets/anand_singh_founder.jpg" alt="Anand Singh — Founder, ScaleX Media" class="founder-portrait-img">
+                <div class="founder-status-badge">
+                  <span class="status-dot"></span> Active Media Buyer
+                </div>
+              </div>
+            </div>
+
+            <!-- Right: Personal Letter -->
+            <div class="founder-text-col">
+              <span class="section-kicker">A NOTE FROM THE FOUNDER</span>
+              <h2 class="founder-heading">"Most agencies hide behind vanity impressions. We answer to your profit."</h2>
+              <blockquote class="founder-letter">
+                "I started ScaleX Media because I got tired of seeing business owners waste lakhs on 'brand awareness' campaigns that never moved the needle. Every single campaign we run is tracked directly against customer acquisition cost and net ROAS. If an ad doesn't generate revenue or qualified leads, we kill it immediately. We manage your ad budget with the exact same discipline we use for our own business."
+              </blockquote>
+              
+              <div class="founder-signature-block">
+                <div class="signature-details">
+                  <p class="sign-name">Anand Singh</p>
+                  <p class="sign-role">Founder — ScaleX Media</p>
+                </div>
+                <!-- Handwritten Style SVG Accent -->
+                <svg class="svg-signature" width="140" height="40" viewBox="0 0 140 40" fill="none" stroke="#2563EB" stroke-width="2" stroke-linecap="round">
+                  <path d="M10 28 C25 8, 35 35, 45 15 C55 35, 65 10, 75 25 C85 20, 95 30, 110 12 C118 8, 125 22, 132 18"></path>
+                </svg>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT FORM & WHATSAPP REDIRECT SECTION -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="contact-card-frame fade-up">
+          <div class="contact-header text-center">
+            <span class="section-kicker">GET YOUR FREE AUDIT</span>
+            <h2 class="section-title">Tell us what you're selling.<br>We'll tell you what it'll cost to scale it.</h2>
+            <p class="section-subtitle">Fill out the quick form below. You'll be connected directly to our WhatsApp with your strategy details.</p>
+          </div>
+
+          <form id="auditForm" class="contact-form" novalidate>
+            <!-- Formspree reply-to hidden field -->
+            <input type="hidden" name="_replyto" id="replyToField" value="">
+            <input type="hidden" name="_subject" value="New ScaleX Media Lead Submission">
+
+            <div class="form-grid">
+              <!-- Name -->
+              <div class="form-group">
+                <label for="name" class="form-label">Full Name <span class="required">*</span></label>
+                <input type="text" id="name" name="name" class="form-input" placeholder="e.g. Rahul Sharma" required>
+                <span class="form-error" id="nameError">Please enter your full name</span>
+              </div>
+
+              <!-- WhatsApp Phone Number -->
+              <div class="form-group">
+                <label for="whatsapp" class="form-label">WhatsApp Number <span class="required">*</span></label>
+                <div class="phone-input-wrap">
+                  <span class="phone-prefix">+91</span>
+                  <input type="tel" id="whatsapp" name="whatsapp" class="form-input" placeholder="9876543210" pattern="[0-9]{10}" required maxlength="10">
+                </div>
+                <span class="form-error" id="whatsappError">Please enter a valid 10-digit mobile number</span>
+              </div>
+
+              <!-- Email -->
+              <div class="form-group">
+                <label for="email" class="form-label">Email Address <span class="required">*</span></label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="rahul@company.com" required>
+                <span class="form-error" id="emailError">Please enter a valid email address</span>
+              </div>
+
+              <!-- Business / Website -->
+              <div class="form-group">
+                <label for="business" class="form-label">Business / Website Name <span class="required">*</span></label>
+                <input type="text" id="business" name="business" class="form-input" placeholder="e.g. MyBrand.com / Real Estate Co." required>
+                <span class="form-error" id="businessError">Please enter your business or website name</span>
+              </div>
+
+              <!-- Monthly Ad Budget -->
+              <div class="form-group">
+                <label for="budget" class="form-label">Monthly Ad Budget <span class="required">*</span></label>
+                <select id="budget" name="budget" class="form-select" required>
+                  <option value="" disabled selected>Select your current monthly budget</option>
+                  <option value="Under ₹25k">Under ₹25,000 / month</option>
+                  <option value="₹25k–₹1L">₹25,000 – ₹1,00,000 / month</option>
+                  <option value="₹1L–₹5L">₹1,00,000 – ₹5,00,000 / month</option>
+                  <option value="₹5L+">₹5,00,000+ / month</option>
+                </select>
+                <span class="form-error" id="budgetError">Please select a monthly ad budget</span>
+              </div>
+
+              <!-- Service Needed -->
+              <div class="form-group">
+                <label for="service" class="form-label">Service Needed <span class="required">*</span></label>
+                <select id="service" name="service" class="form-select" required>
+                  <option value="" disabled selected>Select primary service</option>
+                  <option value="Meta Ads">Meta Ads (Facebook &amp; Instagram)</option>
+                  <option value="Google Ads">Google Ads (Search &amp; Shopping)</option>
+                  <option value="Both">Both Meta &amp; Google Ads</option>
+                  <option value="Not sure">Not sure / Need advice</option>
+                </select>
+                <span class="form-error" id="serviceError">Please select the service needed</span>
+              </div>
+
+              <!-- Message (Optional) -->
+              <div class="form-group full-width">
+                <label for="message" class="form-label">Message / Details (Optional)</label>
+                <textarea id="message" name="message" class="form-textarea" rows="4" placeholder="Tell us briefly about your product, current ROAS or main scaling challenge..."></textarea>
+              </div>
+            </div>
+
+            <!-- Form Status / Redirect Banner -->
+            <div id="formStatus" class="form-status-banner hidden"></div>
+
+            <div class="form-submit-wrap">
+              <button type="submit" id="submitBtn" class="btn btn-primary btn-lg btn-full">
+                <span class="btn-text">Get Free Audit via WhatsApp</span>
+                <span class="btn-spinner hidden">
+                  <svg class="spinner-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10" stroke-dasharray="32" stroke-dashoffset="12"></circle></svg>
+                  Processing...
+                </span>
+              </button>
+              <p class="form-privacy-note">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                Instant WhatsApp redirect after submitting. Zero spam guaranteed.
+              </p>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- LIGHTBOX MODAL FOR SCREENSHOTS -->
+  <div id="lightboxModal" class="lightbox-modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="lightbox-backdrop"></div>
+    <div class="lightbox-content">
+      <button id="lightboxClose" class="lightbox-close" aria-label="Close image preview">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+      <div class="lightbox-header">
+        <span id="lightboxPlatform" class="platform-badge"></span>
+        <span id="lightboxMetric" class="lightbox-title-metric"></span>
+      </div>
+      <div class="lightbox-img-frame">
+        <img id="lightboxImg" src="" alt="Enlarged dashboard screenshot preview" class="lightbox-img">
+      </div>
+    </div>
+  </div>
+
+  <!-- FLOATING WHATSAPP BUTTON -->
+  <a href="https://wa.me/918052661507?text=Hi%20ScaleX%20Media%2C%20I%20want%20a%20free%20ad%20audit" class="floating-whatsapp" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <div class="whatsapp-pulse"></div>
+    <svg class="whatsapp-icon" width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"></path>
+      <path d="M12 2C6.477 2 2 6.477 2 12c0 2.15.682 4.14 1.844 5.772L2.5 21.5l3.878-1.31C7.94 21.282 9.905 22 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18c-1.848 0-3.568-.528-5.029-1.442l-.36-.226-2.295.776.787-2.247-.249-.379A7.949 7.949 0 014 12c0-4.411 3.589-8 8-8s8 3.589 8 8-3.589 8-8 8z"></path>
+    </svg>
+  </a>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-grid">
+        
+        <!-- Brand Info -->
+        <div class="footer-brand">
+          <a href="/" class="brand-logo logo" aria-label="ScaleX Media Home">
+            <img 
+              src="assets/scalexmedia_logo_header.png" 
+              srcset="assets/scalexmedia_logo_header.png 1x, assets/scalexmedia_logo_header@2x.png 2x" 
+              alt="ScaleX Media logo" 
+              class="footer-logo-img" 
+              width="440" 
+              height="100" 
+              loading="lazy"
+            >
+          </a>
+          <p class="footer-tagline">
+            Performance marketing agency engineered around customer acquisition, net ROAS, and transparent campaign scaling.
+          </p>
+        </div>
+
+        <!-- Contact Links -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Direct Contact</h4>
+          <ul class="footer-contact-list">
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              <a href="tel:+918052661507" class="footer-link">+91 80526 61507</a>
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+              <a href="https://wa.me/918052661507?text=Hi%20ScaleX%20Media%2C%20I%20want%20a%20free%20ad%20audit" target="_blank" rel="noopener" class="footer-link">WhatsApp (+91 80526 61507)</a>
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <a href="mailto:anandsingh7206@gmail.com" class="footer-link">anandsingh7206@gmail.com</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Location & Socials -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Office HQ</h4>
+          <p class="footer-location">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            3rd Lane, near Jiamau 1090, Gomtinagar, Lucknow, UP, India
+          </p>
+          <div class="social-links">
+            <a href="#" class="social-icon" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 ScaleX Media. All rights reserved. Founded by Anand Singh.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="js/main.js"></script>
+</body>
+</html>
